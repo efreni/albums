@@ -22,11 +22,15 @@ class AlbumList extends Component {
     //this.setState -> setState è una funzione che è implementata automanticamente dalla classe Component -> funzione di aggiornare il component "ehi, ecco qui dei dati, prendili"
   }
 
+  renderAlbums(){
+    return this.state.albums.map(album => <Text>{album.title}</Text>);
+  }
+
   render() {
     console.log(this.state)
     return (
       <View>
-        <Text>Album List</Text>
+        {this.renderAlbums()}
       </View>
     )
   }
