@@ -6,10 +6,10 @@ import AlbumList from './src/components/AlbumList';
 
 //create component
 const App = () => ( 
-    <View>
+<View>
     <Header headerText={'Albums'} />
     <AlbumList />
-    </View>
+  </View>
 );
 
 //render
