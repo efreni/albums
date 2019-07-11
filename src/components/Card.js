@@ -1,3 +1,5 @@
+//definisce un component che is occupa di mostrare ogni array con una formattazione
+
 import React from 'react'
 import { View } from 'react-native'
 
@@ -7,8 +9,8 @@ const Card = props => {
 
 const styles = {
   containerStyle: {
-    borderWidth: 0.5,
-    borderRadius: 2,
+    borderWidth: 0.2,
+    borderRadius: 1,
     borderColour: '#ddd',
     borderBottomWidth: 0,
     shadowColor: '#000',
