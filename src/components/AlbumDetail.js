@@ -1,15 +1,14 @@
 //serve a mostrare i dettagli di tutti gli album
 
-import React from 'react';
-import { View, Text} from 'react-native';
+import React from 'react'
+import { View, Text } from 'react-native'
 
-const AlbumDetail = (props) => {
-    return (
-        <View>
-            <Text>{props.album.title}</Text>
-        </View>
-    )
+const AlbumDetail = props => {
+  return (
+    <View>
+      <Text>{props.album.title}</Text>
+    </View>
+  )
+}
 
-};
-
-export default AlbumDetail;
+export default AlbumDetail

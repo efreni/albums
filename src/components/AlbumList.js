@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import axios from 'axios'
-import AlbumDetail from './AlbumDetail';
+import AlbumDetail from './AlbumDetail'
 
 // const AlbumList = () => {
 //     return (
@@ -24,20 +24,17 @@ class AlbumList extends Component {
   }
   //tolto text e sostituito con albumdetail
   //key property aggiunta per risolvere il debugging, la key property dev'essere unica e serve a migliorare le performance)
-  renderAlbums(){
-    return this.state.albums.map(album => //vogliamo passare album ad AlbumDetail come prop, per questo tag autochiuso e niente testo
-    <AlbumDetail key={album.title} album={album}/> //il nome album della property è completamente arbitrario, gli diamo lo stesso della variabile solo per facilitare il riconoscimento
-    
-    );
+  renderAlbums() {
+    return this.state.albums.map(
+      (
+        album //vogliamo passare album ad AlbumDetail come prop, per questo tag autochiuso e niente testo
+      ) => <AlbumDetail key={album.title} album={album} /> //il nome album della property è completamente arbitrario, gli diamo lo stesso della variabile solo per facilitare il riconoscimento
+    )
   }
 
   render() {
     console.log(this.state)
-    return (
-      <View>
-        {this.renderAlbums()}
-      </View>
-    )
+    return <View>{this.renderAlbums()}</View>
   }
 }
 
