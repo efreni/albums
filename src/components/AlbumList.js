@@ -25,8 +25,8 @@ class AlbumList extends Component {
   //tolto text e sostituito con albumdetail
   //key property aggiunta per risolvere il debugging, la key property dev'essere unica e serve a migliorare le performance)
   renderAlbums(){
-    return this.state.albums.map(album => 
-    <AlbumDetail key={album.title} album={album}/>
+    return this.state.albums.map(album => //vogliamo passare album ad AlbumDetail come prop, per questo tag autochiuso e niente testo
+    <AlbumDetail key={album.title} album={album}/> //il nome album della property è completamente arbitrario, gli diamo lo stesso della variabile solo per facilitare il riconoscimento
     
     );
   }
