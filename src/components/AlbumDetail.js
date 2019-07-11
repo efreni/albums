@@ -1,7 +1,7 @@
 //serve a mostrare i dettagli di tutti gli album
 
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, Image } from 'react-native'
 import Card from './Card'
 import CardSection from './CardSection'
 
